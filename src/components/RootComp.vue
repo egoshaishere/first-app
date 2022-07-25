@@ -5,6 +5,7 @@
     <Increment />
     <Factorial />
     <Computed />
+    <Setters />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Test from "./TestComponent.vue";
 import Increment from "./Increment.vue";
 import Factorial from "./Factorial.vue";
 import Computed from "./Computed.vue";
+import Setters from "./Setters.vue";
 
 export default {
   name: "RootComp",
@@ -21,6 +23,7 @@ export default {
     Increment,
     Factorial,
     Computed,
+    Setters,
   },
 
   props: {

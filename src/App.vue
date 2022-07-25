@@ -1,28 +1,33 @@
 <template>
   <div id="app">
+    <div>APP</div>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <RootComp msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RootComp from './components/RootComp.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RootComp
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
   margin-top: 60px;
+  border: 2px solid pink;
+  border-radius: 50px;
+  padding: 20px;
 }
 </style>

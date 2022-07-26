@@ -6,6 +6,12 @@
     <Factorial />
     <Computed />
     <Setters />
+    <ClassBinding />
+    <StylesBinding />
+    <Watchers />
+    <VueObjWork />
+    <Refs />
+    <Lifecycle />
   </div>
 </template>
 
@@ -15,6 +21,14 @@ import Increment from "./Increment.vue";
 import Factorial from "./Factorial.vue";
 import Computed from "./Computed.vue";
 import Setters from "./Setters.vue";
+import ClassBinding from "./ClassBinding.vue";
+import StylesBinding from "./StylesBinding.vue";
+import Watchers from "./Watchers.vue";
+import VueObjWork from "./VueObjWork.vue";
+import Refs from './Refs.vue'
+import Lifecycle from './LifeCycle.vue'
+
+
 
 export default {
   name: "RootComp",
@@ -24,6 +38,12 @@ export default {
     Factorial,
     Computed,
     Setters,
+    ClassBinding,
+    StylesBinding,
+    Watchers,
+    VueObjWork,
+    Refs,
+    Lifecycle,
   },
 
   props: {
@@ -33,9 +53,7 @@ export default {
 </script>
 
 <style>
-
 .root {
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,8 +63,5 @@ export default {
   border-radius: 50px;
   width: 600px;
   padding: 20px;
-  
 }
-
-
 </style>

@@ -1,33 +1,37 @@
 <template>
   <div id="app">
-    <div>APP</div>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <RootComp msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <!-- <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/chappa_1">chappa_1</router-link>|
+      <router-link to="/chappa_4">chappa_4</router-link>
+    </nav> -->
+    <router-view />
   </div>
 </template>
 
 <script>
-import RootComp from './components/RootComp.vue'
+import Header from "./components/header/Header.vue";
+import RootComp from "./components/chappa_1/RootComp.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    RootComp
-  }
-}
+    RootComp,
+    Header,
+  },
+};
 </script>
 
 <style>
 #app {
-
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
-  margin-top: 60px;
   border: 2px solid pink;
   border-radius: 50px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 </style>
